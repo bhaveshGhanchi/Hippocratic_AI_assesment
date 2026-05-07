@@ -14,7 +14,6 @@ storyteller + judge + category + reader-feedback flow lives in cli.py and is lau
 main() below. The single-shot call_model() is kept for the assignment skeleton / quick tests.
 """
 
-# openai-python v1+ uses the client class; ChatCompletion.create was removed.
 _oai_client: openai.OpenAI | None = None
 
 _SIMPLE_BEDTIME_SYSTEM = """You write short bedtime stories for children about ages 5-10.
