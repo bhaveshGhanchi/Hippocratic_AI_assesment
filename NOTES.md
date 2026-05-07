@@ -87,7 +87,7 @@ Started in one big `main.py`, then split for clarity:
 This way reviewers can read each concern in one screen without scrolling around.
 
 ### Secrets & deps
-- `.env` for `OPENAI_API_KEY` (also accepts the README’s `OPEN_AI_API_KEY`).
+- `.env` for `OPENAI_API_KEY`.
 - `.gitignore` excludes `.env` and `venv/`.
 - `requirements.txt` lists `openai` and `python-dotenv` so the project is reproducible.
 
@@ -102,7 +102,7 @@ This way reviewers can read each concern in one screen without scrolling around.
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-# put OPENAI_API_KEY in a local .env (not committed)
+# put OPENAI_API_KEY in a .env 
 python main.py
 ```
 
